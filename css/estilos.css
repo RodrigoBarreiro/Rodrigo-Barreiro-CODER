@@ -1,0 +1,345 @@
+/*reste*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fondo_BODY*/
+.fondo{
+    background-image: url(../image/fondo1.png);                             
+}           
+
+
+/*titulo_header*/
+.titulo_principal {                                                  
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.titulo_principal img {
+    top: 15px;
+    width: 320px ;
+}
+
+/* navbar_header */
+.navbar {                                                               
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    padding-left: 35px;
+    padding-right: 35px ;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid black;
+    z-index: 20;
+}
+
+.navbar > ul {
+    display: inline;
+    vertical-align: middle;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    color: rgb(0, 0, 0);
+    position:absolute;
+    background-color: white;
+    display: none;
+    padding: 10px;
+}
+
+/*navbar_derecha*/
+.navbar_derecha {                                                       
+    float: right;
+}
+
+.menu_buton {                                              
+    background-color: #4BA7DB;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    text-decoration:none
+}
+.menu_buton_item{
+    padding-top: 10px;
+}
+
+/*imagen_de_portada*/
+.portada {                                                             
+    margin-top: 101px;
+    width: 100%;
+    
+}
+.portada img {
+    width: 100%;
+    padding: 31px;
+}
+
+/* main_index*/
+.libros_container {                                                         
+    display: flex;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 100px auto;
+}
+
+.lista_libros {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.estrenos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.recomendados {
+    font-family:Arial, Helvetica, sans-serif;  
+    font-size: 30px;
+    font-weight: bold;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.libros_container h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista_libros li{
+    flex-basis: 30%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/*footer*/
+footer{                                                                         
+    background-color: black;
+    padding: 20px;
+}
+
+
+.informacion_contacto {
+    color:white;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: inline-block;
+}
+
+.address_container {
+    margin: 0 auto ;
+    width: 500px;
+}
+
+.redes_sociales {
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/*main_acerca_de*/
+.acercaDe_contenido {                                                       
+    text-align: left;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+}
+.contenedor2 {
+    position: absolute;
+    width: 749px;
+    height: 525px;
+    left: 501px;
+    top: 333px;
+
+}
+.contenedor_imagen_acercaDe {
+    display: inline-block;
+    margin-top: 132px ;
+    width: 100%;
+}
+
+.green_book {
+    position: absolute;
+    margin-top: 241px;
+    margin-left: 501px;
+}
+
+.contenedor_acercaDe h2 {
+    display: inline-block;
+    position: absolute;
+    margin-left: 497px;
+    margin-top: 112px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+}
+
+/*main_adultos*/
+.libros_adultos {                                                           
+    display: inline-block;
+    position: absolute;
+    margin-left:  790px;
+    margin-top: 250px;
+}
+
+.adulto_imagen {
+    display: inline-block;
+    margin-top: 132px ;
+}
+
+.adultos_main h2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 790px ;
+    margin-top: 139px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    z-index: 10;
+}
+
+/*main_biografias*/
+.biografias_libros{                                                             
+    display: flex;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 650px;
+    flex-wrap: wrap;
+    width: 40%;
+    align-content: space-between;
+    justify-content: center;
+    gap: 30px 30px ;
+}
+.biografia_imagen {
+    display: inline-block;
+    position: relative;
+    width: 472px;
+    height: 760px;
+    margin-top: 136px;
+}
+.biografia_main h2{
+    display: inline-block;
+    position: absolute;
+    margin-top: 136px;
+    margin-left: 870px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+}
+
+/*main_infantiles*/
+.caratulas_libros_infantiles{                                                   
+    display: inline-block;
+    position: absolute;
+    margin-left:  735px;
+    margin-top: 268px;
+}
+.imagen_infantiles1 {
+    display: inline-block;
+    margin-top: 132px ;
+    width: 100%;
+}
+
+.infantiles_main h2 {                                                       
+    display: inline-block;
+    position: absolute;
+    margin-left: 720px ;
+    margin-top: 139px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    z-index: 10;
+}
+
+/*main_novelas*/
+.novelas_libros{                                                                   
+    display: flex;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 650px;
+    flex-wrap: wrap;
+    width: 40%;
+    align-content: space-between;
+    justify-content: center;
+    gap: 30px 30px ;
+}
+.img_novelas {
+    display: inline-block;
+    position: relative;
+    width: 472px;
+    height: 760px;
+    margin-top: 136px;
+}
+
+.novelas_main h2 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 136px;
+    margin-left: 870px;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10;
+}
+
+/*main_will*/
+.will_contenido{                                                                
+    display: flex;
+    text-align: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.contenedor_will {
+    display: flex;
+    width: 771px;
+    height: 495px;
+    margin-bottom: 395px;
+    margin-left: 585px ;
+    margin-top: 134px;
+    background-color: #F5D991;
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.imagen_will2 { 
+    position: absolute;
+    margin-left: 166px;
+    margin-bottom: 298px;
+    margin-right: 867px;
+}
+.will_titulo{
+    position: absolute;
+    top: 134px;
+    left: 621px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.interaccion_will {
+    position: relative;
+    left: 245px;
+    bottom: 260px;
+    width: 50%;
+}
