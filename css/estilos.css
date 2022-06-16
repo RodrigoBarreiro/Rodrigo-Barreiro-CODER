@@ -10,6 +10,7 @@ html{
 }
 
 body {
+
     display: flex;    /*footer abajo*/
     flex-direction: column;  /*footer abajo*/
     min-height: 100%;   /*footer abajo*/
