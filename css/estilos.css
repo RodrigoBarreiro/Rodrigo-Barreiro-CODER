@@ -775,3 +775,65 @@ footer{
 .contenedor_madona_info h2{
     font-size: 40px;
 }
+
+
+@media (min-width:1224px){
+    .contendor_hechizo {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin: 135px auto 0 auto;
+    }
+    .contenedor_hechizo_info{
+        width: 80%;
+    }
+}
+@media (max-width:1223px){
+    .contendor_hechizo {
+        display: block;
+        margin-top: 132px;
+    }
+    .imagen_hechizo img {
+        width: 100%;
+        max-width: 500px;
+    }
+    .contenedor_hechizo_info{
+        width: 100%;
+    }
+    .imagen_hechizo{
+        text-align: center;
+    }
+    .interaccion_hechizo{
+        justify-content: center;
+        margin: 0 auto !important
+    }
+}
+
+.main_hechizo .contenedor_hechizo_info{
+    flex-grow: 1;
+
+}
+.main_hechizo .imagen_hechizo{
+    flex-grow: 3;
+}
+
+.interaccion_hechizo{
+    display: flex;
+    margin-left: 103px;
+    margin-top: 20px;
+}
+.main_hechizo{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.contenedor_hechizo_info{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: #499A77 ;
+    padding: 10px;
+    height: 625px;
+}
+.contenedor_hechizo_info h2{
+    font-size: 40px;
+}
