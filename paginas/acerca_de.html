@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Acerca de</title>
 </head>
@@ -14,7 +15,7 @@
             <div class="menu_resp">
                 <img  src="../image/menu_resp.svg" alt="menu" width="40px">
             </div>
-            <div class="titulo_principal">
+            <div class="titulo_principal" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <h1><a href="../index.html"><img src="../image/logo.svg"alt="Green Book"></a></h1> 
             </div>
             <ul class="navbar_izquierda">
@@ -36,7 +37,7 @@
             </ul>
         </nav>
     </header> 
-        <main class="contenedor_acercaDe">
+        <main class="contenedor_acercaDe" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <div class="acercaDe_contenido">
                 <h2>Acerca de... </h2> <br>
                 <img class="green_book" src="../image/logo.svg" alt="logo">
@@ -64,5 +65,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

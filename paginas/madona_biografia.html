@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Madona Biografia</title>
 </head>
@@ -38,10 +39,10 @@
     </header> 
     <main class="main_madona">
         <div class="contendor_madona">
-            <div class="imagen_madona">
+            <div class="imagen_madona" data-aos="zoom-in-down">
                 <img src="../image/pp39.jpg" alt="Madona" width="406px">
             </div>
-            <div class="contenedor_madona_info">
+            <div class="contenedor_madona_info" data-aos="flip-right">
                 <h2>MADONNA. UNA BIOGRAFÍA</h2> <br>
                 <p>Con todos vosotros y vosotras, Madonna: la indiscutible reina del pop.
                 «La gente creía que un día despertarían y ya no estaría ahí. Pero se equivocaban: nunca me iré.»
@@ -71,5 +72,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -42,6 +42,8 @@ body {
     top: 0;
     border-bottom: 1px solid black;
     z-index: 20;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 .navbar_izquierda {
@@ -49,14 +51,29 @@ body {
     vertical-align: middle;
 }
 
+
+
 nav ul li {
     display: inline-block;
     padding: 20px;
     position: relative;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
+    text-shadow: 3px 6px 8px #868585, -1px 2px 5px #8d8888;
+}
+
+@keyframes opacidadDeTexto {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
 nav ul li a {
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -69,9 +86,10 @@ nav ul li:hover ul {
 nav ul li ul {
     color: rgb(0, 0, 0);
     position:absolute;
-    background-color: white;
+    background-color: rgb(206, 200, 200);
     display: none;
     padding: 10px;
+    border-radius: 20px;
 }
 
 /*navbar_derecha*/
@@ -86,11 +104,12 @@ nav ul li ul {
     font-weight: bold;
     padding: 5px;
     text-decoration:none;
-    
+    text-shadow: none;
 }
 .menu_buton_item{
     padding-top: 10px;
 }
+
 @media (min-width:1224px){
     .portada img {
         width: 100%;
@@ -150,7 +169,7 @@ nav ul li ul {
     }
     .libros_container{
         display: block !important;
-        margin: 40px auto !important;
+        margin: 60px auto !important;
     }
     .portada img{
         padding: 5px;
@@ -165,7 +184,8 @@ nav ul li ul {
     display: flex;                                                           
     margin-top: 101px;
     width: 100%;
-    
+    animation-name: opacidadDeTexto;
+    animation-duration:3s;
 }
 
 
@@ -176,6 +196,8 @@ nav ul li ul {
     gap: 20px;
     max-width: 1300px;
     margin: 100px auto;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 .lista_libros {
@@ -271,6 +293,8 @@ footer{
     font-size: 24px;
     line-height: 30px;
     order: 2;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .contenedor_imagen_acercaDe{
     order:1;
@@ -319,9 +343,13 @@ footer{
     font-size: 35px;
     font-weight: bold;
     text-align: center;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .libros_adultos h2 {
     padding-bottom: 71px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 /*biografias_main*/
@@ -362,6 +390,8 @@ footer{
 .biografias_libros h2{
     font-size: 50px;
     padding-bottom: 71px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .biografias_libros ul{
     display: flex;
@@ -371,6 +401,8 @@ footer{
     justify-content: center;
     gap: 32px;
     margin: 0 auto;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 /*main_infantiles*/
@@ -407,12 +439,16 @@ footer{
     font-size: 35px;
     text-align: center;
     margin: 0 auto;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .imagen_infantiles1{
     order: 1;
 }
 .caratulas_libros_infantiles h2{
     padding-bottom: 71px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 /*main_novelas*/
@@ -452,6 +488,8 @@ footer{
 }
 .novelas_libros h2{
     padding-bottom: 71px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .novelas_libros ul{
     display: flex;
@@ -461,6 +499,8 @@ footer{
     justify-content: center;
     gap: 32px;
     margin: 0 auto;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 
 /*main_will*/
@@ -509,6 +549,8 @@ footer{
     display: flex;
     margin-left: 103px;
     margin-top: 20px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .main_will{
     max-width: 1300px;
@@ -571,6 +613,8 @@ footer{
     display: flex;
     margin-left: 103px;
     margin-top: 20px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .main_michelle{
     max-width: 1300px;
@@ -633,6 +677,8 @@ footer{
     display: flex;
     margin-left: 103px;
     margin-top: 20px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .main_frida{
     max-width: 1300px;
@@ -703,6 +749,8 @@ footer{
     display: flex;
     margin-left: 200px;
     margin-top: 20px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .main_bruce{
     max-width: 1300px;
@@ -766,6 +814,8 @@ footer{
     display: flex;
     margin-left: 200px;
     margin-top: 20px;
+    animation-name: opacidadDeTexto;
+    animation-duration:2s;
 }
 .main_madona{
     max-width: 1300px;
