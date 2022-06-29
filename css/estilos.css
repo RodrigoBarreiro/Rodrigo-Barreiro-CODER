@@ -62,6 +62,10 @@ nav ul li {
     text-shadow: 3px 6px 8px #868585, -1px 2px 5px #8d8888;
 }
 
+nav ul li :hover{
+    color: #808080;
+}
+
 @keyframes opacidadDeTexto {
     0%{
         opacity: 0;
