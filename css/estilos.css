@@ -60,17 +60,11 @@ nav ul li {
     text-shadow: 3px 6px 8px #868585, -1px 2px 5px #8d8888;
 }
 
-nav ul li :hover{
+nav ul li :hover{        
     color: #808080;
 }
-
-@keyframes opacidadDeTexto {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+nav ul li:hover ul {    
+    display: block;
 }
 
 nav ul li a {
@@ -80,11 +74,7 @@ nav ul li a {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav ul li:hover ul {
-    display: block;
-}
-
-nav ul li ul {
+nav ul li ul {                 
     color: rgb(0, 0, 0);
     position:absolute;
     background-color: rgb(206, 200, 200);
@@ -93,13 +83,22 @@ nav ul li ul {
     border-radius: 20px;
 }
 
+@keyframes opacidadDeTexto {    
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /*navbar_derecha*/
-.navbar_derecha {                                                
+.navbar_derecha {                                                   
     float: right;
 }
 
 .menu_buton {                                              
-    background-color: #4BA7DB;
+    background-color: #4BA7DB;   
     border-radius: 5px;
     color: white;
     font-weight: bold;
@@ -107,11 +106,13 @@ nav ul li ul {
     text-decoration:none;
     text-shadow: none;
 }
-.menu_buton_item{
+.menu_buton_item{          
     padding-top: 10px;
 }
 
-@media (min-width:1224px){
+/*menu_hambur*/
+
+@media (min-width:1224px){  
     .portada img {
         width: 100%;
         padding: 31px;
@@ -124,25 +125,26 @@ nav ul li ul {
     }
 }
 @media (max-width:1223px){
-    .navbar ul li{
-        padding: 10px 0px;
-        display: block;
+    .navbar {
+        padding: 5px;
     }
     .navbar ul {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .navbar ul li{
+        padding: 10px 0px;
+        display: block;
+    }
     .navbar_derecha {
         float: none;
     }
-    .menu_resp ,.titulo_principal{
+    .menu_resp ,.titulo_principal{    
         display: inline-block;
         vertical-align: baseline;
     }
-    .navbar {
-        padding: 5px;
-    }
-    .navbar_derecha , .navbar_izquierda{
+    
+    .navbar_derecha , .navbar_izquierda{    
         display: none;
     }
     .checkbox{
@@ -152,7 +154,7 @@ nav ul li ul {
         position: absolute;
         opacity: 0;
     }
-    .checkbox:checked ~.navbar_izquierda{
+    .checkbox:checked ~.navbar_izquierda{   
         display: block;
     }    
     .checkbox:checked ~.navbar_derecha{
@@ -201,10 +203,21 @@ nav ul li ul {
     animation-duration:2s;
 }
 
+.libros_container h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .lista_libros {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
+
+.lista_libros li{
+    flex-basis: 30%;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .estrenos {
@@ -222,16 +235,6 @@ nav ul li ul {
     flex-basis: 50%;
 }
 
-.libros_container h4 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.lista_libros li{
-    flex-basis: 30%;
-    flex-grow: 1;
-    text-align: center;
-}
 
 /*footer*/
 
@@ -285,6 +288,7 @@ footer{
     .acercaDe_contenido h2{
         line-height: 50px;
     }
+    
 }
 .acercaDe_contenido {                                                      
     text-align: left;
@@ -920,7 +924,7 @@ footer{
     }
     .imagen_bridgerton img {
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
     }
     .contenedor_bridgerton_info{
         width: 100%;
